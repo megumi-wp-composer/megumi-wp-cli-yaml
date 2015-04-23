@@ -11,9 +11,6 @@ if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 	return;
 }
 
-// it need manually load
-require_once( dirname( __FILE__ ) . '/inc/class-yaml.php' );
-
 /**
  * Getting plugin information from WordPress.org Plugins API.
  */
