@@ -1,5 +1,5 @@
 {
-    "name": "megumi/megumi-wp-cli-yaml",
+    "name": "megumi/wp-cli-yaml",
     "description": "WP-CLI command imports/exports WordPress settings",
     "homepage": "https://github.com/megumi-wp-composer/megumi-wp-cli-yaml",
     "license": "GPL-2.0",
