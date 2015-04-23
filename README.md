@@ -31,6 +31,42 @@ require:
 ```
 
 
+### Install into wp-content/mu-plugins with composer.
+
+Place the composer.json like following.
+
+```
+{
+    "name": "megumi/mu-plugins",
+    "authors": [
+        {
+            "name": "John Smith",
+            "email": "john@example.com"
+        }
+    ],
+    "require": {
+        "megumi/wp-cli-yaml": "*"
+    }
+}
+```
+
+Place the plugin file like following,
+
+```
+<?php
+/*
+Plugin Name: mu-plugin for example.com
+*/
+
+require_once dirname( __FILE__ ) . '/vendor/autoload.php';
+```
+
+Then, just run composer.
+
+```
+$ composer install
+```
+
 ## How to develop
 
 ```
