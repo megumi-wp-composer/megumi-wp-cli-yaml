@@ -12,8 +12,15 @@ Feature: Components of the WP-CLI commands
   Scenario: Example test.
     Given a WP install
 
-    When I run `wp yaml hello miyauchi`
+    When I run `wp yaml hello Horike`
     Then STDOUT should be:
       """
-      Success: Hello, miyauchi!
+      Success: Hello, Horike!
       """
+
+    When I run `wp yaml hello Hanakuso`
+    Then STDOUT should be:
+      """
+      Success: Hello, Hanakuso!
+      """
+
