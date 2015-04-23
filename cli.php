@@ -42,4 +42,4 @@ class WP_CLI_YAML extends WP_CLI_Command {
     }
 }
 
-WP_CLI::add_command( 'yaml', 'WP_CLI_Plugins_API' );
+WP_CLI::add_command( 'yaml', 'WP_CLI_YAML' );
