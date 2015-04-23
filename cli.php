@@ -1,7 +1,7 @@
 <?php
 
 /**
- * WP-CLI wp plugins-api command
+ * WP-CLI wp yaml command
  *
  * @subpackage commands/community
  * @maintainer Takayuki Miyauchi
@@ -12,12 +12,12 @@ if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 }
 
 // it need manually load
-require_once( dirname( __FILE__ ) . '/inc/class-plugins-api.php' );
+require_once( dirname( __FILE__ ) . '/inc/class-yaml.php' );
 
 /**
  * Getting plugin information from WordPress.org Plugins API.
  */
-class WP_CLI_Plugins_API extends WP_CLI_Command {
+class WP_CLI_YAML extends WP_CLI_Command {
 
 	private $fields = array(
 		'name',
@@ -45,7 +45,7 @@ class WP_CLI_Plugins_API extends WP_CLI_Command {
 	 *
 	 * ## EXAMPLES
 	 *
-	 *    wp plugins-api author miyauchi
+	 *    wp yaml author miyauchi
 	 *
 	 * @subcommand author
 	 */
@@ -84,7 +84,7 @@ class WP_CLI_Plugins_API extends WP_CLI_Command {
 	 *
 	 * ## EXAMPLES
 	 *
-	 *    wp plugins-api browse popular
+	 *    wp yaml browse popular
 	 *
 	 * @subcommand browse
 	 */
@@ -110,7 +110,7 @@ class WP_CLI_Plugins_API extends WP_CLI_Command {
 	 *
 	 * ## EXAMPLES
 	 *
-	 *    wp plugins-api info wp-total-hacks
+	 *    wp yaml info wp-total-hacks
 	 *
 	 * @subcommand info
 	 */
@@ -126,4 +126,4 @@ class WP_CLI_Plugins_API extends WP_CLI_Command {
 	}
 }
 
-WP_CLI::add_command( 'plugins-api', 'WP_CLI_Plugins_API' );
+WP_CLI::add_command( 'yaml', 'WP_CLI_Plugins_API' );

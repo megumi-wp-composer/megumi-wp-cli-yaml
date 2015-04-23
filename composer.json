@@ -1,7 +1,7 @@
 {
-    "name": "miya0001/wp-cli-plugins-api",
-    "description": "WP-CLI command for Plugins API",
-    "homepage": "http://github.com/miya0001/wp-cli-plugins-api",
+    "name": "megumi/megumi-wp-cli-yaml",
+    "description": "WP-CLI command imports/exports WordPress settings",
+    "homepage": "https://github.com/megumi-wp-composer/megumi-wp-cli-yaml",
     "license": "GPL-2.0",
     "authors": [
         {
